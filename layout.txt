@@ -1,0 +1,14 @@
+restaurant-website/
+│
+├── index.html
+├── style.css
+├── script.js
+├── images/ (directory for your images)
+│   ├── hero-bg.jpg
+│   ├── about-section.jpg
+│   ├── menu-pasta.jpg
+│   ├── menu-steak.jpg
+│   ├── menu-dessert.jpg
+│   ├── chef-profile.jpg
+│   └── gallery-*.jpg (multiple)
+└── README.txt (optional)

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista | Authentic Italian Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Bella <span>Vista</span></a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="btn-reserve">Reserve Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Authentic Italian Cuisine</h1>
+            <p class="subtitle">Serving traditional recipes with a modern twist since 1995</p>
+            <a href="#reservation" class="btn-hero">Book a Table</a>
+            <a href="#menu" class="btn-hero btn-outline">View Menu</a>
+        </div>
+        <!-- ADD YOUR HERO IMAGE HERE -->
+        <div class="hero-image">
+            <img src="images/hero-bg.jpg" alt="Delicious pasta dish">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-subtitle">A family tradition of authentic Italian cooking</p>
+                <p>Founded in 1995 by the Rossi family, Bella Vista brings the flavors of Southern Italy to your table. Our recipes have been passed down through generations, using only the finest ingredients imported directly from Italy.</p>
+                <p>We believe in the slow food philosophy - taking time to craft each dish with care and passion. Our pasta is made fresh daily, and our sauces simmer for hours to develop deep, rich flavors.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>28+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Menu Items</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5k+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <!-- ADD YOUR ABOUT IMAGE HERE -->
+                <img src="images/about-section.jpg" alt="Restaurant interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Crafted with passion, served with love</p>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="appetizers">Appetizers</button>
+                <button class="tab-btn" data-category="mains">Main Courses</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-category active" id="appetizers">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bruschetta Classica</h3>
+                            <p>Toasted bread topped with tomatoes, garlic, fresh basil, and extra virgin olive oil</p>
+                        </div>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Calamari Fritti</h3>
+                            <p>Crispy fried squid served with lemon aioli and marinara sauce</p>
+                        </div>
+                        <span class="item-price">$16</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Burrata Caprese</h3>
+                            <p>Fresh burrata cheese with heirloom tomatoes, basil, and balsamic reduction</p>
+                        </div>
+                        <span class="item-price">$18</span>
+                    </div>
+                </div>
+                
+                <!-- Main Courses -->
+                <div class="menu-category" id="mains">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p>Classic Roman pasta with eggs, pecorino cheese, pancetta, and black pepper</p>
+                        </div>
+                        <span class="item-price">$24</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Osso Buco alla Milanese</h3>
+                            <p>Braised veal shanks with gremolata, served with saffron risotto</p>
+                        </div>
+                        <span class="item-price">$38</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Filetto di Manzo</h3>
+                            <p>8oz beef filet with truffle mashed potatoes and red wine reduction</p>
+                        </div>
+                        <span class="item-price">$42</span>
+                    </div>
+                </div>
+                
+                <!-- Menu Images -->
+                <div class="menu-images">
+                    <!-- MENU IMAGES HERE -->
+                    <div class="menu-img">
+                        <img src="images/menu-pasta.jpg" alt="Pasta dish">
+                    </div>
+                    <div class="menu-img">
+                        <img src="images/menu-steak.jpg" alt="Steak dish">
+                    </div>
+                    <div class="menu-img">
+                        <img src="images/menu-dessert.jpg" alt="Dessert">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef-section" id="chef">
+        <div class="container">
+            <div class="chef-image">
+                <!-- ADD YOUR CHEF IMAGE HERE -->
+                <img src="images/chef-profile.jpg" alt="Head Chef Marco Rossi">
+            </div>
+            <div class="chef-content">
+                <h2 class="section-title">Meet Our Chef</h2>
+                <h3>Marco Rossi</h3>
+                <p class="chef-bio">Born and raised in Naples, Italy, Chef Marco brings over 25 years of culinary expertise to Bella Vista. Trained under Michelin-starred chefs in Rome and Florence, he combines traditional techniques with innovative presentations.</p>
+                <p class="chef-bio">"For me, cooking is about creating memories. Every dish should tell a story and evoke emotion. That's the true essence of Italian cuisine."</p>
+                <div class="chef-signature">
+                    <img src="images/signature.png" alt="Chef's signature" class="signature">
+                    <p>Marco Rossi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A taste of the Bella Vista experience</p>
+            
+            <div class="gallery-grid">
+                <!-- ADD YOUR GALLERY IMAGES HERE (6 images recommended) -->
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Restaurant interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Fresh ingredients">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Wine selection">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Dining area">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Dessert presentation">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Chef preparing food">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2 class="section-title">Visit Us</h2>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Trattoria Street<br>Little Italy, NY 10013</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(212) 555-1234</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@bellavista.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Mon-Thu: 11am-10pm<br>Fri-Sat: 11am-11pm<br>Sunday: 12pm-9pm</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reservation-form" id="reservation">
+                <h2 class="section-title">Make a Reservation</h2>
+                <form id="reservationForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                        <select required>
+                            <option value="" disabled selected>Party Size</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3-4">3-4 People</option>
+                            <option value="5-6">5-6 People</option>
+                            <option value="7+">7+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                        <input type="time" required>
+                    </div>
+                    <textarea placeholder="Special Requests (allergies, celebrations, etc.)" rows="4"></textarea>
+                    <button type="submit" class="btn-submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Bella Vista</h3>
+                    <p>Authentic Italian cuisine served with passion since 1995. Join us for an unforgettable dining experience.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Trattoria Street, NY 10013</li>
+                        <li><i class="fas fa-phone"></i> (212) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> info@bellavista.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
